@@ -57,6 +57,7 @@ function GetCurrentOS {
   case $unameOut in
     Linux*)     echo "Linux";;
     Darwin*)    echo "MacOS";;
+    FreeBSD*)    echo "FreeBSD";;
   esac
   return 0
 }

@@ -97,6 +97,21 @@ static bool OpenLibrary()
         DlOpen(MAKELIB("10"));
     }
 
+    if (libssl == NULL)
+    {
+        DlOpen(MAKELIB("11"));
+    }
+
+    if (libssl == NULL)
+    {
+        DlOpen(MAKELIB("111"));
+    }
+
+    if (libssl == NULL)
+    {
+        DlOpen(MAKELIB("8"));
+    }
+
     return libssl != NULL;
 }
 

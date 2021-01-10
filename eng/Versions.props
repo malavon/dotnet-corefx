@@ -16,6 +16,7 @@
     <!-- Opt-in repo features -->
     <UsingToolMicrosoftNetCompilers>true</UsingToolMicrosoftNetCompilers>
     <UsingToolIbcOptimization>true</UsingToolIbcOptimization>
+    <UsingToolIbcOptimization Condition="$([MSBuild]::IsOSPlatform('FreeBSD'))">false</UsingToolIbcOptimization>
     <!-- Opt-out repo features -->
     <UsingToolXliff>false</UsingToolXliff>
     <!-- Paths used during restore -->
