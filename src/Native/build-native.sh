@@ -306,7 +306,7 @@ while :; do
                 # clangx.y or clang-x.y
                 v=`echo $lowerI | tr -d '[:alpha:]-='`
                 __ClangMajorVersion=`echo $v | cut -d '.' -f1`
-                __ClangMinorVersion=`echo $v | cut -d '.' -f2`
+                __ClangMinorVersion=
             ;;
         clang3.5|-clang3.5)
             __ClangMajorVersion=3
